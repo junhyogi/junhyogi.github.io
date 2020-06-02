@@ -31,6 +31,28 @@ $('.image-upload-wrap').bind('dragleave', function() {
     $('.image-upload-wrap').removeClass('image-dropping');
 });
 
+// reload
+
+
+function gaReload() {
+    gtag('event', '다른 사진으로 재시도', {
+        'event_category': '다른 사진으로 재시도'
+    });
+    window.location.reload();
+}
+function gaReload1() {
+    gtag('event', '다른 사진으로 재시도 1차', {
+        'event_category': '다른 사진으로 재시도'
+    });
+}
+function gaReload2() {
+    gtag('event', '다른 사진으로 재시도 2차', {
+        'event_category': '다른 사진으로 재시도'
+    });
+    window.location.reload();
+}
+
+
 // Teachable machine
 
 const URL = "https://teachablemachine.withgoogle.com/models/VdX0qtxEM/";
@@ -56,58 +78,57 @@ async function predict() {
     prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
     var resultTitle, resultExplain, resultCeleb;
 
-    // gtag('event', '동물상 테스트 수행', {
-    //     'event_category': '동물상 테스트 수행',
-    //     'event_label': '남자'
-    // });
+    gtag('event', '동물상 테스트 수행', {
+        'event_category': '동물상 테스트 수행'
+    });
     switch (prediction[0].className) {
         case "dog":
             resultTitle = "xxx"
             resultExplain = "설명"
             resultCeleb = "예:"
-            // gtag('event', '남자 결과 강아지상', { 'event_category': '남자 결과' });
+            gtag('event', '최상위 결과 불테리어', { 'event_category': '최상위 결과' });
             break;
         case "lama":
             resultTitle = "xxx"
             resultExplain = "설명"
             resultCeleb = "예:"
-            // gtag('event', '남자 결과 고양이상', { 'event_category': '남자 결과' });
+            gtag('event', '최상위 결과 라마', { 'event_category': '최상위 결과' });
             break;
         case "odobenus":
             resultTitle = "xxx"
             resultExplain = "설명"
             resultCeleb = "예:"
-            // gtag('event', '남자 결과 토끼상', { 'event_category': '남자 결과' });
+            gtag('event', '최상위 결과 바다코끼리', { 'event_category': '최상위 결과' });
             break;
         case "ferrilata":
             resultTitle = "xxx"
             resultExplain = "설명"
             resultCeleb = "예:"
-            // gtag('event', '남자 결과 공룡상', { 'event_category': '남자 결과' });
+            gtag('event', '최상위 결과 티벳여우', { 'event_category': '최상위 결과' });
             break;
         case "flog":
             resultTitle = "xxx"
             resultExplain = "설명"
             resultCeleb = "예:"
-            // gtag('event', '남자 결과 곰상', { 'event_category': '남자 결과' });
+            gtag('event', '최상위 결과 개구리', { 'event_category': '최상위 결과' });
             break;
         case "monkey":
             resultTitle = "xxx"
             resultExplain = "설명"
             resultCeleb = "예:"
-            // gtag('event', '남자 결과 곰상', { 'event_category': '남자 결과' });
+            gtag('event', '최상위 결과 원숭이', { 'event_category': '최상위 결과' });
             break;
         case "dinosaur":
             resultTitle = "xxx"
             resultExplain = "설명"
             resultCeleb = "예:"
-            // gtag('event', '남자 결과 곰상', { 'event_category': '남자 결과' });
+            gtag('event', '최상위 결과 공룡', { 'event_category': '최상위 결과' });
             break;
         default:
             resultTitle = "알수없음"
             resultExplain = ""
             resultCeleb = ""
-            // gtag('event', '남자 결과 알수없음', { 'event_category': '남자 결과' });
+            gtag('event', '최상위 결과 알수없음', { 'event_category': '최상위 결과' });
     }
 
     var title = "<div class='result-animal-title'>" + resultTitle + "</div>"
