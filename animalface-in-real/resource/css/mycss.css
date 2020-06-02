@@ -553,3 +553,9 @@ input:checked+label>.knob>i:before {
     width: 33.33%;
     padding: 5px;
 }
+
+.ad-banner {
+    width: 320px;
+    height: 100px;
+    margin: 0 auto;
+}
