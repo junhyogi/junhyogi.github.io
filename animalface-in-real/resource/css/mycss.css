@@ -554,12 +554,13 @@ input:checked+label>.knob>i:before {
     padding: 5px;
 }
 
-.ad-banner-100 {
+.ad-banner-hundred {
     width: 320px;
     height: 100px;
     margin: 0 auto;
 }
-.ad-banner-50 {
+
+.ad-banner-fifty {
     width: 320px;
     height: 50px;
     margin: 0 auto;
