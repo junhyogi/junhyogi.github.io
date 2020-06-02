@@ -559,3 +559,7 @@ input:checked+label>.knob>i:before {
     height: 100px;
     margin: 0 auto;
 }
+
+.jumbotron {
+    background-color: #ffffff;
+}
