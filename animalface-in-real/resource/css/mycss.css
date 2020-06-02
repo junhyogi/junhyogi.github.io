@@ -559,7 +559,8 @@ input:checked+label>.knob>i:before {
     height: 100px;
     margin: 0 auto;
 }
-
-.jumbotron {
-    background-color: #ffffff;
+.ad-banner-bottom {
+    width: 320px;
+    height: 150px;
+    margin: 0 auto;
 }
