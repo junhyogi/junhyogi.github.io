@@ -1,8 +1,17 @@
 body {
     font-family: 'Jua', sans-serif;
-    background-color: #ffffff;
+    background-color: gray;
     box-sizing: border-box;
     color: #35465d;
+}
+
+.main {
+    background-color: gray;
+}
+
+.container {
+    max-width: 1200px;
+    background-color: white; 
 }
 
 .file-upload {
