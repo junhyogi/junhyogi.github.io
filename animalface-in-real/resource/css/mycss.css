@@ -5,8 +5,14 @@ body {
     color: #35465d;
 }
 
-.main {
+.main, footer {
     background-color: gray;
+}
+
+.copyright {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .main-container {
