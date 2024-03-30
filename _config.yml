@@ -20,10 +20,14 @@
 
 title: junhyogi.github.io
 email: junhyogi@gmail.com
-description: junhyogi
+description: > # this means to ignore newlines until "baseulr:"
+junhyogi
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://xho95.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: junhyogi/junhyogi.github.io
 github_username:  junhyogi
+
+timezone: Asia/Seoul
 
 # Build settings
 theme: minima
